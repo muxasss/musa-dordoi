@@ -1,0 +1,63 @@
+/* Header.css */
+.header {
+    background-color: #273353;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Позволяет контейнеру гибко реагировать на ширину экрана */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .header nav ul li {
+    font-size: 18px;
+  }
+  
+  .header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header nav ul li a:hover {
+    color: #5798ff;
+  }
+  
+  /* Для мобильных экранов */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Меню и логотип (или другие элементы) будут располагаться друг под другом */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header nav ul {
+      flex-direction: column; /* Переводим меню в столбик */
+      gap: 15px; /* Уменьшаем расстояние между пунктами меню */
+    }
+  
+    .header nav ul li {
+      font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+  }
+  
+  /* Для очень маленьких экранов (например, телефоны в портретной ориентации) */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+    }
+  
+    .header nav ul {
+      gap: 10px; /* Еще меньшее расстояние для маленьких экранов */
+    }
+  
+    .header nav ul li {
+      font-size: 14px; /* Еще больше уменьшаем шрифт */
+    }
+  }
+  

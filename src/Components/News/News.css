@@ -1,0 +1,47 @@
+.members-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .members-title {
+    text-align: center;
+    font-size: 2em;
+    color: #2b2d42;
+    margin-bottom: 20px;
+  }
+  
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .member-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-name {
+    font-size: 1.5em;
+    color: #2b2d42;
+    margin-bottom: 10px;
+  }
+  
+  .member-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  

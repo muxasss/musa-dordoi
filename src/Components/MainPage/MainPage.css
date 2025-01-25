@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Чтобы учитывать паддинги и границы в размере элемента */
+  }
+  
+  body {
+    overflow-x: hidden; /* Скрывает горизонтальную прокрутку */
+  }
+  
+  .home-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Это также гарантирует отсутствие горизонтальной прокрутки */
+  }
+  
+  .home-header {
+    background-color: #2b2d42;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .home-header p {
+    font-size: 1.2em;
+  }
+  
+  section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #2b2d42;
+    margin-bottom: 10px;
+    border-left: 4px solid #8d99ae;
+    padding-left: 10px;
+  }
+  
+  p, li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .benefit, .achievement {
+    margin-bottom: 20px;
+  }
+  
+  .achievement h3 {
+    font-size: 2em;
+    color: #2b2d42;
+  }
+  
+  button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #2b2d42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+  }
+  
+  button:hover {
+    background-color: #8d99ae;
+  }
+  
+  .dordoi-photo {
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover; /* Чтобы изображение корректно вписывалось в контейнер */
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    width: 100%; /* Обеспечиваем адаптивность ширины */
+  }
+  
+  /* Мобильные стили */
+  @media (max-width: 768px) {
+    .dordoi-photo {
+      height: auto; /* На меньших экранах высота будет автоматически изменяться */
+      max-height: 250px; /* Можно задать максимальную высоту для мобильных устройств */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dordoi-photo {
+      height: auto;
+      max-height: 200px; /* Для очень маленьких экранов можно уменьшить изображение */
+    }
+  }
+  
